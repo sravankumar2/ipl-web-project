@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+body{
+    
+    font-family: 'Nunito', sans-serif;
+    font-size:1.5rem;
+    position: relative;
+    background-color: #153463;
+}
+nav{
+    height: 80px;
+    width: 100%; 
+    background-color: #b9b5b5;  
+    box-shadow: 5px 5px  #ccc;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    font-size:20px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+nav img{
+    width:100px;
+    height: 70px;
+    margin-right:10px;
+}
+nav button{
+    outline: none;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+	background: #f78d1d;
+    padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border-radius: .5em;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+nav button:hover {	
+    background: #f47c20;
+}
+nav > div{
+   font-size: 16px;
+}
+div a{
+    margin-right: 45px;
+}
+main{
+    margin-top: 85px; 
+    padding-bottom: 10px; 
+    box-sizing: border-box;  
+}
+#aaa{
+    margin-top: 85px;
+    padding-top:50px;
+    padding-bottom: 40px;
+    background-color:white;    
+}
+#main-element{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;       
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.team-card{    
+    margin: 10px;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    box-shadow:4px 4px  #ccc ; 
+    box-sizing: border-box;
+    background-color: lightskyblue;
+    cursor: pointer;
+    border-radius: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+.team-card h2{
+    font-size:25px;
+    font-weight: 800;
+    font-style: italic; 
+    
+}
+.team-card h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: green;
+}
+.team-card h3 span{
+    color:black;
+}
+.team-card p{
+ color:blue
+}
+.team-card p span {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+}
+img{
+    max-width:170px;
+    max-height: 170px;    
+    
+}
+h1{
+    text-transform: uppercase;
+}
+main >div {
+    display: none;
+}
+#new-form{
+    display: none;
+}
+#player-form{
+    display: none;
+}
+.toggleClass{
+    display:block;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+@media screen and (max-width:700px){
+    /* nav a{
+        display: none;
+    } */
+    nav i{
+        display:none;
+    }
+    .team-card{
+        width:50%;
+    }
+    
+    
+}
+
+@media screen and (max-width:600px){
+  
+    .team-card{
+        width:80%;
+    }
+    nav  button{
+        font-size: 12px;
+        padding:5px;
+    } 
+    nav img{
+        width:70px;
+        height:60px;
+        margin:0;
+    }
+     
+    
+}
+@media screen and (max-width:480px){
+ 
+ #search-element{
+     width:120px;
+ }
+ nav{
+     padding-left:10px;
+     padding-right: 10px;
+ }
+}
+
+form{
+    text-align: center;
+    
+    
+}

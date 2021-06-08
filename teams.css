@@ -1,0 +1,48 @@
+body{
+    background-color:#C2FFD8;   
+    
+}
+#playerView{
+    margin: 20px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    box-sizing: border-box;
+}
+h2{
+    font-weight: 800;
+    font-style: italic;
+    color: blueviolet;
+    text-decoration:underline ;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+.playerName{
+    display: flex;
+    flex-direction: column;    
+}
+#playerView img{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+#playerView h3{
+    color:orange;
+    margin:0;
+}
+#playerView h3 span{
+    color:rgb(145, 74, 74);
+    
+}
+#playerView p{
+    color:green;
+}
+#playerView p span{
+    color: rgb(145, 74, 74);
+
+}
+

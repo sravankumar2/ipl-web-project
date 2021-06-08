@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>IPL Cricket Teams </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <img src="https://www.jagranimages.com/images/newimg/21082020/21_08_2020-ipl_logo_20650553.jpg" alt="ipl"/>
+        <a href="./home.html">Home</a>
+       
+        <div>   
+          <i class="fas fa-search"></i>   
+            <input id="search-element" type="search" placeholder="search team name" />
+        </div>
+        <div><button id="btn">Create Team</button></div>      
+        
+    </nav>
+    <main>
+        <div id="aaa">
+            <form id="submission">
+                <div>               
+                <input id="teamForm" type="radio" name="g1" value="1"/>Create New Team
+                <input id="playerForm" type="radio" name="g1" value="2"/>Create New Player
+                </div>
+                <div id="new-form">
+                    Enter Team Name <input id="name" type="text" placeholder="Enter Team Name" value="" /><br>
+                    Enter Team Icon Url <input id="icon" type="text" placeholder="Enter Team Icon Url" value="" /><br>
+                    <!-- Enter Player Count <input id="count" type="text" placeholder="Enter player count" value=""/><br> -->
+                    Name Of Top Batsman <input id="batsman" type="text" placeholder="Top Batsman" value=""/><br>
+                    Name of Top Bowler <input id="bowler" type="text" placeholder="Top Bowler" value=""/><br>
+                    Championships won <input  id="wins" type="text" placeholder="Winning count" value=""/><br>
+                    <button id="Submit1-btn"> Submit</button>
+                </div>
+                <div id="player-form">
+                    Player FullName <input id="pName" type="text" placeholder="Enter player Name" value=""/><br>
+                    Player Image <input id="pimage" type="text" placeholder="image Url" value=""/><br>
+                   Select Team  <select id="dropdown">
+                        <option value="select Team">select Team</option>
+                    </select><br>
+                    Prie <input id="cost" type="text" placeholder="price" value=""/><br>
+                    <div>
+                        Player Status<input type="radio" id="playing" name="p1" value="playing" /> Playing
+                        <input type="radio"   id="bench"  name="p1"  value="bench"/> On-bench;
+                    </div>
+                    <div>
+                        Description<input  id="Batsman" type="radio" name="t1" value="Batsman"/> Batsman
+                        <input  id="Bowler" type="radio" name="t1" value="Bowler"/> Bowler
+                        <input  id="Allrounder" type="radio" name="t1" value="Allrounder"/> Allrounder
+                    </div>                  
+                    <button id="Submit2-btn"> Submit</button>
+                </div>            
+                
+                
+            </form>
+        </div> 
+       <div id="main-element">
+        
+        <!-- <div class="team-card">
+            <h2>Mumbai Indians</h2>
+            <img src="https://www.pngfind.com/pngs/m/671-6719734_srh-ipl-team-logo-2019-hd-png-download.png"/>
+            <p>15</p>
+            <h3>Ishanth Kishan</h3>
+            <h3>Trent Boult</h3>
+            <p>5</p>
+        </div>
+        <div class="team-card">
+            <h2>Mumbai Indians</h2>
+            <img src="https://www.pngfind.com/pngs/m/21-212945_rajasthan-royals-ipl-all-team-logo-hd-png.png"/>
+            <p>15</p>
+            <h3>Ishanth Kishan</h3>
+            <h3>Trent Boult</h3>
+            <p>5</p>
+        </div> -->
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="./home.js"></script>
+</body>
+</html> 
