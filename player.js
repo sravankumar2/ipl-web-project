@@ -3,8 +3,8 @@ var ParentPlayer=document.getElementById("players-card");
 var header=document.getElementById("team-name")
 var urlName=location.href.split('=')[1];
 //console.log(urlName)
-
-var playersList=localStorage.getItem(urlName) === null ? [] : JSON.parse(localStorage.getItem(urlName));
+var newUrlName=urlName.replace("%20"," ");
+var playersList=localStorage.getItem(newUrlName) === null ? [] : JSON.parse(localStorage.getItem(newUrlName));
 playersList.map((item,index)=>{
     createPlayerCard(item);
     header.innerHTML=item.tname;
